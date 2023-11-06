@@ -1,0 +1,29 @@
+{
+	"name": "nilmtk Environment",
+	// "dockerFile": "../Dockerfile",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "jupyter",
+	"workspaceFolder": "/home/jovyan/work",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"github.copilot",
+				"mhutchie.git-graph",
+				"donjayamanne.git-extension-pack"
+			]
+		}
+	},
+	"features": {
+        "git": {
+            "version": "latest"
+        }
+	},
+	"forwardPorts": [
+		8888
+	],
+	"postCreateCommand": "git config --global user.name 'yasuhiro-tsuji-rist' && git config --global user.email 'yasuhiro.tsuji@rist.co.jp'"
+}
