@@ -24,6 +24,5 @@
 	},
 	"forwardPorts": [
 		8888
-	],
-	"postCreateCommand": "git config --global user.name 'yasuhiro-tsuji-rist' && git config --global user.email 'yasuhiro.tsuji@rist.co.jp'"
+	]
 }
